@@ -7,7 +7,7 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY ../section1/script.sh ./script.sh
+COPY section1/script.sh ./script.sh
 RUN chmod +x script.sh
 
 ENTRYPOINT ["./script.sh"]
